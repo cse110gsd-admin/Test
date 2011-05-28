@@ -17,8 +17,8 @@
   </div>
 
   <%= f.fields_for :exercises do |exercise_form| %>
-    <%= exercise_form.text_field :name %>
-    <%= exercise_form.text_field :reps %>
+    <%= exercise_form.label :name, "Exercise" %><br />
+    <%= exercise_form.text_field :name %>   
     <%= exercise_form.link_to_remove "Remove this exercise" %>
   <% end %>
   <%= f.link_to_add "Add an exercise", :exercises %>
